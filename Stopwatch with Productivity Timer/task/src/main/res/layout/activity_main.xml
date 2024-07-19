@@ -2,15 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#1e2429" >
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        android:textSize="18sp" />
+        android:textSize="60dp"
+        android:textColor="#ebedf0"/>
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
@@ -26,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:text="@string/Start" />
+            android:text="@string/Start"
+            android:background="#36404a"
+            android:textColor="#ebedf0"/>
 
         <Button
             android:id="@+id/resetButton"
@@ -34,7 +38,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/Reset" />
+            android:text="@string/Reset"
+            android:background="#36404a"
+            android:textColor="#ebedf0"/>
 
 
     </LinearLayout>
@@ -49,7 +55,9 @@
             android:id="@+id/settingsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Settings" />
+            android:text="@string/Settings"
+            android:background="#ebedf0"
+            android:textColor="#1e2429"/>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -59,8 +67,8 @@
 
             <ProgressBar
                 android:id="@+id/progressBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:indeterminate="true"
                 android:indeterminateDrawable="@drawable/custom_progress_drawable"

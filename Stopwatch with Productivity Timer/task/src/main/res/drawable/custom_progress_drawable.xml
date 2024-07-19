@@ -11,8 +11,8 @@
         android:thicknessRatio="11.333"
         android:useLevel="false">
         <size
-            android:width="18dp"
-            android:height="18dp" />
+            android:width="180dp"
+            android:height="180dp" />
 
         <gradient
             android:centerColor="#880800FF"

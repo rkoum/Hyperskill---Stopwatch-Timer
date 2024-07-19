@@ -31,9 +31,12 @@ class MainActivity : AppCompatActivity() {
     private var upperLimit = 0
     private var colorIndex = 0
     private val colors = arrayOf(
-        Color.RED,
-        Color.BLUE,
-        Color.GREEN
+        Color.parseColor("#b2d8d8"),
+        Color.parseColor("#66b2b2"),
+        Color.parseColor("#008080"),
+        Color.parseColor("#006666"),
+        Color.parseColor("#004c4c")
+
     )
     private val runnable = object : Runnable {
         override fun run() {
@@ -73,7 +76,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        supportActionBar?.hide()
         val buttonStart: Button = findViewById(R.id.startButton)
         val buttonReset: Button = findViewById(R.id.resetButton)
         val buttonSettings: Button = findViewById(R.id.settingsButton)
@@ -115,7 +118,7 @@ class MainActivity : AppCompatActivity() {
             counter = -1
             progressBar.visibility = View.GONE
             buttonSettings.isEnabled = true
-            timerTextView.setTextColor(Color.BLACK)
+            timerTextView.setTextColor(Color.parseColor("#ebedf0"))
 
 
         }
